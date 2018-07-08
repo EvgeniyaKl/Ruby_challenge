@@ -7,7 +7,6 @@ class CustomerClass
   end
 
   def add_rental_object_to_list(arg)
-    x = 7  
     @rentals << arg
   end
 
