@@ -5,11 +5,19 @@ class CustomerClass
     @customer_name = customer_name
     @rentals ||= []     
   end
-
+  
+  # add rental entry to list of customer rentals
+  
   def add_rental_object_to_list(arg)
     @rentals << arg
   end
-
+   
+   # build customer plain text report of movie rental prices and bonuses: 
+   # 
+   # * calculate price for each movie
+   # * calculate total bonuses for all movies 
+   # * calculate total price for all movies
+   
   def statement
     total_amount, freqent_renter_points = 0, 0
     result = "Rental Record for #{@customer_name}\n"
